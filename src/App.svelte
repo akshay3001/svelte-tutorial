@@ -1,9 +1,16 @@
 <script>
-	const name = 'Test'
+	const name = 'Test';
+	const test1 = 'Test1';
+	const test2 = 'Test2';
+	const test3 = 'Test3';
 </script>
 
 <main>
 	<h1>Hello {name}!</h1>
+	<h1>{test1}!</h1>
+	<h1>{test2}!</h1>
+	<h1>{test3}!</h1>
+	<h1>{8*8}!</h1>
 </main>
 
 <style>
