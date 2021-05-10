@@ -1,9 +1,10 @@
 <script>
 	const name = 'Test'
+	const htmlBinding = '<strong>Hello World!</strong>';
 </script>
 
 <main>
-	<h1>Hello {name}!</h1>
+	<h1>{@html htmlBinding}</h1>
 </main>
 
 <style>
