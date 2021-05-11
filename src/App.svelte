@@ -1,9 +1,11 @@
 <script>
-	const name = 'Test'
+	const testId = 'test';
+	const id = 'test2';
 </script>
 
 <main>
-	<h1>Hello {name}!</h1>
+	<h1 id={testId}>Test</h1>
+	<h1 {id}>Test 2</h1>
 </main>
 
 <style>
