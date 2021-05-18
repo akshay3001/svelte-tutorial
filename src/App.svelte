@@ -1,5 +1,10 @@
 <script>
   let names = ["John", "Austin", "Maarques"];
+  let data = [
+    { name: "John", id: 1 },
+    { name: "Austin", id: 2 },
+    { name: "Marques", id: 3 },
+  ];
 </script>
 
 <main>
@@ -8,6 +13,14 @@
       <li>
         {index + 1}
         {name}
+      </li>
+    {/each}
+  </ul>
+  <hr />
+  <ul>
+    {#each data as d (d.id)}
+      <li>
+        {d.name}
       </li>
     {/each}
   </ul>
