@@ -1,29 +1,29 @@
 <script>
-	const name = 'Test'
+  let names = ["John", "Austin", "Maarques"];
 </script>
 
 <main>
-	<h1>Hello {name}!</h1>
+  <ul>
+    {#each names as name, index}
+      <li>
+        {index + 1}
+        {name}
+      </li>
+    {/each}
+  </ul>
 </main>
 
 <style>
-	main {
-		text-align: center;
-		padding: 1em;
-		max-width: 240px;
-		margin: 0 auto;
-	}
+  main {
+    text-align: center;
+    padding: 1em;
+    max-width: 240px;
+    margin: 0 auto;
+  }
 
-	h1 {
-		color: #ff3e00;
-		text-transform: uppercase;
-		font-size: 4em;
-		font-weight: 100;
-	}
-
-	@media (min-width: 640px) {
-		main {
-			max-width: none;
-		}
-	}
+  @media (min-width: 640px) {
+    main {
+      max-width: none;
+    }
+  }
 </style>
